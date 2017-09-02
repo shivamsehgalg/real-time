@@ -1,0 +1,30 @@
+.p6{
+    padding:'6px'
+  }
+.Clr{
+color:'white';
+fontSize:'14px';
+marginLeft:'6px';
+marginRight:'6px';
+}
+
+.h24{
+    height: 24px !important;
+}
+
+.w24{
+    width: 24px !important;
+}
+
+
+.mt20{
+    margin-top: 20px !important;
+}
+
+.top10{
+    top: 10px !important;
+}
+
+.pl20{
+    padding-left: 20px !important;
+}

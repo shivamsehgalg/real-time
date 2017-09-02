@@ -1,0 +1,55 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/",
+  "proxy": "http://development.pricepointmoves.com",
+  "dependencies": {
+    "history": "^4.6.3",
+    "jquery": "^3.2.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-google": "^0.8.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "local-storage": "^1.4.2",
+    "material-responsive-grid": "^1.1.1",
+    "material-ui": "^0.18.7",
+    "material-ui-datatables": "^0.18.1",
+    "material-ui-scrollable-tabs": "^1.0.0",
+    "pre-commit": "^1.2.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^3.0.5",
+    "react-scripts": "1.0.10",
+    "react-search-input": "^0.11.2",
+    "react-swipeable-views": "^0.12.5",
+    "react-tap-event-plugin": "^2.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --coverage",
+    "lint": "./node_modules/.bin/eslint --ext .js --ext .test --fix --ignore-path .gitignore --ignore-pattern app.js .",
+    "eject": "react-scripts eject"
+  },
+  "pre-commit": ["lint", "test"],
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "collectCoverageFrom": [
+      "**/src/**/*.{js,json,es6}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/app.js"
+    ]
+  }
+}
